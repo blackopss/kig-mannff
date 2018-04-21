@@ -9,7 +9,7 @@ bot.on('ready', () => {
 
 });
 
-client.login(process.env.BOT_TOKEN);
+client.on('error', console.error);
 
 bot.on('guildMemberAdd', member => {
 
