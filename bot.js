@@ -8,6 +8,9 @@ bot.on('ready', () => {
     console.log(`[Users] ${bot.users.size}`)
 
 });
+
+client.login(process.env.BOT_TOKEN);
+
 bot.on('guildMemberAdd', member => {
 
      if (member.guild.id === "435524954843381763") {
@@ -83,5 +86,4 @@ bot.channels.get("435524954843381763").send(`Welcome ${member} To __${member.gui
 
 
 
-client.login(process.env.BOT_TOKEN);
 
